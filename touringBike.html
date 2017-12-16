@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/examples/starter-template/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Bicycle</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/starter-template.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Zach Schmidt</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="raceBike.html">Race</a></li>
+            <li class="active"><a href="#">Touring</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Raleigh Kodiak</h1>
+        <p class="lead">This is my touring bike. I've taken it on two tours through the Cascades, and I've ridden it to Tijuana!</p>
+        <div class="col-md-6">
+          <img style="width:100%;" id="image" src="">
+          <script type="text/javascript">
+
+            // TODO -- Can't use JQuery here...
+            var number = Math.round(Math.random(2)+1);
+            document.getElementById("image").src = "img/tour_"+number+".jpg";
+          </script>
+        </div>
+      </div>
+       <div class="col-md-6 align-left">
+          <ul>
+            <li><h2>Frame</h2></li>
+            <ul>
+              <li>1984 65cm(!!) Raleigh Kodiak</li>
+            </ul>
+            <li><h2>Drivetrain</h2></li>
+            <ul>
+              <li>First Generation Deore Front and Rear Derailleur</li>
+              <li>170mm Triple Crankset 48-40-30</li>
+              <li>14-34 7 Speed Shimano Freewheel</li>
+            </ul>
+            <li><h2>Wheels</h2></li>
+            <ul>
+              <li>Raleigh Hubs and 1 1/4" Rims</li>
+              <li>Schwalbe HS-420 Marathon Tires</li>
+            </ul>
+            <li><h2>Misc</h2></li>
+            <ul>
+              <li>Cane Creek Brake Levers</li>
+              <li>Kool Stop Salmon Brake Pads</li>
+            </ul>
+
+          </ul>
+        </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js"></script>
+  
+
+</body></html>

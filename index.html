@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script src="js/asdf.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon"
+      type="image/png"
+      href="public_html/img/favicon.ico">
+
+    <title>Zach Schmidt</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/serif/style.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Welcome</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Top</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#documents" onclick = $("#menu-close").click(); >Documents</a>
+            </li>
+            <li>
+                <a href="#schedule" onclick = $("#menu-close").click(); >Schedule</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-top">
+                <h1 class="text-stroke">Zach Schmidt</h1>
+
+                <h3>Computer Science Grad Student</h3>
+
+                <h4>University of Oregon</h4>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">About Me</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="small">
+                    <p class="lead">I'm a grad student studying Computer Science at the University of Oregon. My research interests currently relate to theoretical computer science, particularly formal program analysis and validation. I have a bachelor's degree in both Computer Science and Mathematics from Minnesota State University - Mankato.
+
+		    <br>
+		    <br>
+		   It also happens that I have hobbies! My big interests are <a href="https://www.strava.com/athletes/19818831">endurance sports</a> -- <a href="raceBike.html">cycling</a> and running (<a href="http://onlineraceresults.com/race/view_race.php?race_id=57110&num=10&split=TIME&submit_action=Refresh+Leaders#racetop">my longest race so far has been a measly 25k, though</a>) mainly. If you happen to do either of these, get in touch and let's plan a route! 
+
+		    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Documents -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="documents" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Documents</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-info fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong><a href="documents/Resume.pdf" class="btn btn-light">Résumé</a></strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-book fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong><a href="documents/CostOfBrownianMotion.pdf" class="btn btn-light" style="font-style:italic">Computational Cost of Brownian Motion</a></strong>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong><a href="bing.html" class="btn btn-light" style="font-style:italic">Elevation Maps</a></strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Schedule -->
+    <section id="schedule" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Fall 2017 Schedule</h2>
+                    <img style="width=100%; height:auto" src="img/schedule.jpg">
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (651) 398-4727</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:zschmidt@cs.uoregon.edu">zschmidt@cs.uoregon.edu</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title>Bing Elevation</title>
+</head>
+<body style="font-family:sans-serif;">
+		<center>
+			<h1>Elevation Visualisation</h1>
+		</center>
+
+		<div class="mapSection">
+			<div id="map" style="height:600px;width:600px;position:absolute;">
+			</div>
+			<canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;position:absolute;pointer-events: none;">
+			</canvas><br>
+		</div>
+
+		<div class="information" style="margin-left:650px">
+			<div class="inputSection">
+
+				<h3>Enter a location</h3>
+				<input type="text" id="location" value="Eugene, OR" placeholder="Enter the location"><br/><br/>
+
+				<button type="button" id="dervBtn">Derivative</button>
+				<button type="button" id="normBtn">Normal</button>
+				<br/><br/>
+				<input type="checkbox" id="elevationLayer" checked> Elevation Layer<br>
+
+				<h3 style="visibility: hidden;">Or enter center points</h3>
+				<input style="visibility: hidden;" type="text" id="long" value="" placeholder="Enter the longitude"><br>
+				<input style="visibility: hidden;" type="text" id="lat" value="" placeholder="Enter the latitude"><br>
+
+				
+			</div>
+			<div class="keySection">
+				<h4>Key</h4>
+				<svg height="200" width="100">
+				  <defs>
+				    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+				      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:.4" />
+				      <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:.4" />
+				    </linearGradient>
+				  </defs>
+					<rect x="0" y="0" width="50" height="25" style="fill:rgba(255,0,0,.4)" />
+					<rect x="0" y="25" width="50" height="100" style="fill:url(#grad1)" />
+					<rect x="0" y="125" width="50" height="25" style="fill:rgba(0,255,0,.4)" />
+				</svg>
+			</div>
+
+			<div id="elevationStats" style="margin-left:65px;margin-top:-235px">
+				<br><br>
+				<strong>Max: </strong> -- feet 
+				<br><br><br><br><br><br><br>
+				<strong>Min: </strong> -- feet
+				<br><br>
+			</div>
+			<div class="weatherSection" style="width:300px;margin-left:200px;margin-top:-422px; text-align:right;">
+
+				<h2>Weather Info:</h2>
+
+				<table style="width:100%">
+					<tr>
+						<td>Temperature:</td>
+						<td id="temperature" style="text-align:center;">-- &#8457;</td> 
+					</tr>
+					<tr>
+						<td>Sunrise:</td>
+						<td id="sunrise" style="text-align:center;">--</td>
+					</tr>
+					<tr>
+						<td>Sunset:</td>
+						<td id="sunset" style="text-align:center;">--</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+
+	<script src="bingElevation.js"></script>
+	<script async defer
+		 src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB5IiIymO4tkM3j19YqJkWrFJZms13ayDk&signed_in=true&callback=initMap">
+	</script>
+</body>
+</html>
