@@ -55,7 +55,7 @@ function getTimeString(millis)
 
 function getForecast(lat, lng)
 {
-  var forecastApi = "http://api.openweathermap.org/data/2.5/weather?lat="; //44&lon=-123
+  var forecastApi = "https://api.openweathermap.org/data/2.5/weather?lat="; //44&lon=-123
   var key = "&appid=d2612e03455401d5d5d53a0dde82c630";
 
   var xmlHttp = new XMLHttpRequest();
@@ -74,7 +74,7 @@ function getForecast(lat, lng)
 function getLatLng()
 {
   //Calls mapQuest to get lat/lng for an address
-  var mapquestApi = "http://www.mapquestapi.com/geocoding/v1/address?key=KM4sDe5QGtHmGxLIm6LoMhYLQ7AkGrGY&location=";
+  var mapquestApi = "https://www.mapquestapi.com/geocoding/v1/address?key=KM4sDe5QGtHmGxLIm6LoMhYLQ7AkGrGY&location=";
 
   if(document.getElementById("long").value != "" && document.getElementById("lat").value != ""){
     setLatLng(Number(document.getElementById("lat").value),
@@ -225,7 +225,7 @@ var drawElevation = function(lat, lng){
 }
 
 var getElevations = function(lat, lng){
-  var apiLocation = "http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=";
+  var apiLocation = "https://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=";
   var queries = "&rows=32&cols=32&heights=sealevel";
   var key = "&key=AgdJmHJNbOApcjOXhgGoeD0OeiaEoxJ-zXbtF60rdVvWnD2GZeH-czRQ9lH03Vil";
   var retData;
