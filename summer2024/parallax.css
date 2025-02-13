@@ -1,0 +1,108 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.nevada-header {
+    background-image: url("https://assets3.thrillist.com/v1/image/3171070/2880x1620/crop;webp=auto;jpeg_quality=60;progressive.jpg");
+    min-height: 100%;
+}
+
+.oregon-bg {
+    /*  https://www.flickr.com/photos/ex_magician/3725978863 */
+    background-image: url("img/oregon.jpg");
+    min-height: 100%;
+}
+
+.california-bg {
+    /*  Bob White -- https://www.flickr.com/photos/ncbob/46773314684 */
+    background-image: url("img/california.jpg");
+    min-height: 100%;
+}
+
+
+.nevada-bg {
+    /*  Andrew Kearns --  https://www.flickr.com/photos/andrew_kearns_photography/48692259597/ */
+    background-image: url("img/nevada.jpg");
+    min-height: 100%;
+}
+
+.utah-bg {
+    /*  https://commons.wikimedia.org/wiki/User:King_of_Hearts -- https://en.wikipedia.org/wiki/Bryce_Canyon_National_Park#/media/File:Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg  */
+    /*  Todd Petrie  -- https://www.flickr.com/photos/58869428@N05/9582773487 */
+    background-image: url("img/utah_2.jpg");
+    min-height: 100%;
+}
+
+.wyoming-bg {
+    /*  Troy Smith  -- https://www.flickr.com/photos/high_trails/8005224186 */
+    background-image: url("img/wyoming.jpg");
+    min-height: 100%;
+}
+
+.colorado-bg {
+    /*  robert thigpen  -- https://www.flickr.com/photos/robertthigpen/4872775045 */
+    background-image: url("img/colorado.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+#loading {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192, 192, 192, 1);
+  background-image: url("https://media.tenor.com/On7kvXhzml4AAAAi/loading-gif.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg {
+        background-attachment: scroll;
+    }
+}
