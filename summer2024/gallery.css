@@ -2,6 +2,7 @@ div.scroll-container {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
+    max-height: 31vh;
 }
 
 div.scroll-container img {
